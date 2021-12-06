@@ -1,0 +1,299 @@
+@media (min-width: 360px) and (max-width: 768px) {
+}
+
+/* Small */
+
+@media (min-width: 768px) and (max-width: 992px) {
+}
+
+/* Medium */
+
+@media (min-width: 992px) and (max-width: 1200px) {
+}
+
+/* Large */
+
+@media (min-width: 1200px) and (max-width: 1700px) {
+}
+
+html {
+  scroll-behavior: smooth !important;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Corinthia:wght@400;700&family=Meow+Script&display=swap");
+body {
+}
+
+/*Start Nav*/
+.header {
+  height: 100vh;
+}
+.header .pic {
+  height: 100vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
+.uk-navbar-nav li a {
+  font-size: 20px !important;
+}
+
+.uk-navbar-nav li a i {
+  font-size: 15px !important;
+}
+
+.header .text {
+  margin: auto;
+  text-align: center;
+  display: block;
+  margin-top: 10%;
+}
+
+.header .text .title,
+.header .text .paragh {
+  color: #fff;
+}
+
+.header .text .title {
+  font-size: 44px;
+  font-weight: 800;
+}
+
+.header .text .paragh {
+  font-size: 15px;
+  font-weight: 500;
+}
+.border-nav {
+  border-bottom: 1px solid #eee;
+}
+.uk-navbar-nav li a {
+  color: #fff;
+}
+/*End Nav*/
+.download span {
+  color: #fff;
+}
+.download img {
+  width: 140px;
+}
+@media (max-width: 416px) {
+  .download img {
+    display: block;
+    text-align: center;
+    margin: auto;
+  }
+}
+.section-title p {
+  font: normal normal normal 18px/22px Great Vibes;
+  letter-spacing: 0px;
+  color: #760103;
+  text-transform: capitalize;
+  text-align: center;
+  font-family: "Meow Script", cursive;
+}
+.works-section h3 {
+  text-transform: capitalize;
+  font: normal normal bold 30px/38px Gilroy ☞;
+}
+.works-section p {
+  text-align: left;
+  font: normal normal 900 122px/154px Gilroy ☞;
+  letter-spacing: 0px;
+  color: #000000;
+  text-transform: capitalize;
+  opacity: 0.03;
+}
+.works-section .col-md-4:nth-child(2) {
+  margin-top: 5%;
+}
+.portfolio .portfolio-item {
+  margin-bottom: 30px;
+}
+
+.portfolio #portfolio-flters {
+  padding: 0;
+  margin: 0 auto 25px auto;
+  list-style: none;
+  text-align: center;
+  border-radius: 50px;
+  padding: 2px 15px;
+}
+
+.portfolio #portfolio-flters li {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px 15px;
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  color: #444444;
+  margin-bottom: 5px;
+  transition: all 0.3s ease-in-out;
+  border-radius: 5px;
+  font-family: "Poppins", sans-serif;
+}
+
+.portfolio #portfolio-flters li:hover,
+.portfolio #portfolio-flters li.active {
+  color: #fff;
+  background: #5846f9;
+}
+
+.portfolio #portfolio-flters li:last-child {
+  margin-right: 0;
+}
+
+.portfolio .portfolio-wrap {
+  transition: 0.3s;
+  position: relative;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.portfolio .portfolio-wrap::before {
+  content: "";
+  background: rgba(88, 70, 249, 0.8);
+  position: absolute;
+  left: 30px;
+  right: 30px;
+  top: 30px;
+  bottom: 30px;
+  transition: all ease-in-out 0.3s;
+  z-index: 2;
+  opacity: 0;
+}
+
+.portfolio .portfolio-wrap .portfolio-info {
+  opacity: 0;
+  position: absolute;
+  top: 10%;
+  left: 0;
+  right: 0;
+  text-align: center;
+  z-index: 3;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-info h4 {
+  font-size: 20px;
+  color: #fff;
+  font-weight: 600;
+}
+
+.portfolio .portfolio-wrap .portfolio-info p {
+  color: #ffffff;
+  font-size: 14px;
+  text-transform: uppercase;
+}
+
+.portfolio .portfolio-wrap .portfolio-links {
+  opacity: 0;
+  left: 0;
+  right: 0;
+  bottom: 10%;
+  text-align: center;
+  z-index: 3;
+  position: absolute;
+  transition: all ease-in-out 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a {
+  color: rgba(255, 255, 255, 0.6);
+  margin: 0 2px;
+  font-size: 28px;
+  display: inline-block;
+  transition: 0.3s;
+}
+
+.portfolio .portfolio-wrap .portfolio-links a:hover {
+  color: #fff;
+}
+
+.portfolio .portfolio-wrap:hover::before {
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: 1;
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-info {
+  opacity: 1;
+  top: calc(50% - 48px);
+}
+
+.portfolio .portfolio-wrap:hover .portfolio-links {
+  opacity: 1;
+  bottom: calc(50% - 50px);
+}
+.portfolio .details .name {
+  font: normal normal 600 16px/20px Gilroy;
+  color: #000;
+}
+.portfolio .details .category {
+  font: normal normal 300 14px/20px Gilroy ☞;
+  color: #7e7e7e;
+}
+.portfolio .details .price {
+  font: normal normal 300 14px/20px Gilroy ☞;
+  color: #7e7e7e;
+}
+.portfolio .details .price {
+  font: normal normal bold 18px/20px Gilroy ☞;
+  letter-spacing: 0px;
+  color: #760103;
+}
+.portfolio .details .col-md-6:nth-child(1) {
+  align-self: center;
+}
+.portfolio .details .col-md-6:nth-child(2) {
+  text-align: end;
+}
+.portfolio .details .sell {
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  background-color: #760103;
+  color: #fff;
+  padding: 10%;
+  text-align: right;
+}
+.download-app{
+    background: #FDF1F2 0% 0% no-repeat padding-box;
+border-radius: 32px;
+height: 342px;
+margin:13% auto 0;
+}
+.download-app .col-md-6:nth-child(1) img {
+  width: 140px;
+}
+.download-app h2 {
+  font: normal normal bold 30px/38px Gilroy ☞;
+}
+.download-app p {
+  font: normal normal medium 16px/22px Gilroy ☞;
+  letter-spacing: 0px;
+  color: #7e7e7e;
+}
+.download-app .col-md-6:nth-child(2) img{
+    position: relative;
+    margin-top: -31%;
+}
+footer{
+    background-color:#000000;
+    padding:5% 0;
+}
+footer *{
+    color:#fff;
+}
+footer h4 , footer li{
+    color:#7e7e7e;
+}
+footer .search , footer .search span{
+background-color:#760103;
+border:none;
+}
